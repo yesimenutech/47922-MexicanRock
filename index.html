@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Rock Restaurant | Authentic Mexican-American Experience</title>
+    <meta name="description" content="Discover Mexican Rock Restaurant in Boone, NC. The perfect fusion of authentic Mexican cuisine and American spirit. Order online today!">
+    
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1793830254/MexicanRockRestLOGO_gp48ku.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Rye&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Mexican Rock Restaurant",
+      "image": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830630/669084440_122125658673195824_394418005568480858_n_sz17jm.jpg",
+      "@id": "",
+      "url": "https://mexicanrockrestaurant.onlineordering.io/",
+      "telephone": "828-616-0673",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "585 E King St Ext B",
+        "addressLocality": "Boone",
+        "addressRegion": "NC",
+        "postalCode": "28607",
+        "addressCountry": "US"
+      },
+      "menu": "https://mexicanrockrestaurant.onlineordering.io/en?locationId=1615912&orderMode=in_store_pickup",
+      "servesCuisine": "Mexican American",
+      "acceptsReservations": "true"
+    }
+    </script>
+
+    <style>
+        :root {
+            /* Flag Colors */
+            --us-blue: #0A3161;
+            --us-red: #B31942;
+            --mx-green: #006847;
+            --mx-red: #CE1126;
+            
+            /* Core Palette */
+            --pure-white: #ffffff;
+            --off-white: #F9F9F6;
+            --dark-bg: #15191C;
+            --text-dark: #1F2326;
+            --text-light: #5A6065;
+            
+            /* Typography */
+            --font-display: 'Rye', serif;
+            --font-body: 'Montserrat', sans-serif;
+            
+            --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background-color: var(--off-white);
+            /* Subtle Background Pattern: Stars + Talavera/Aztec geometric hints */
+            background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10l5 15h15l-10 10 5 15-15-10-15 10 5-15-10-10h15z' fill='%230A3161' fill-opacity='0.03'/%3E%3Cpath d='M60 60h20v20h-20zM80 80h20v20h-20zM40 80h20v20h-20zM60 100h20v20h-20z' fill='%23006847' fill-opacity='0.03'/%3E%3C/svg%3E");
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Typography & Headers */
+        h1, h2, h3, h4, h5, .nav-link, .btn {
+            text-transform: uppercase;
+        }
+
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        .section-header.centered {
+            align-items: center;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-weight: 800;
+            font-size: 1rem;
+            color: var(--mx-red);
+            letter-spacing: 4px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: var(--text-dark);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .section-title.light {
+            color: var(--pure-white);
+        }
+
+        /* Thematic Custom Ornament (US Star + MX Geometry) */
+        .thematic-ornament {
+            width: 160px;
+            height: 25px;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12.5L30 5L40 12.5L30 20Z' fill='%23006847'/%3E%3Cpath d='M10 12.5L20 5L30 12.5L20 20Z' fill='%23CE1126'/%3E%3Cpath d='M80 3L83.09 9.26L90 10.27L85 15.14L86.18 22.02L80 18.77L73.82 22.02L75 15.14L70 10.27L76.91 9.26L80 3Z' fill='%230A3161'/%3E%3Cpath d='M140 12.5L150 5L160 12.5L150 20Z' fill='%23006847'/%3E%3Cpath d='M130 12.5L140 5L150 12.5L140 20Z' fill='%23CE1126'/%3E%3Cline x1='45' y1='12.5' x2='65' y2='12.5' stroke='%23006847' stroke-width='2'/%3E%3Cline x1='95' y1='12.5' x2='115' y2='12.5' stroke='%23CE1126' stroke-width='2'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--us-blue);
+            color: var(--pure-white);
+            padding: 18px 45px;
+            font-family: var(--font-body);
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            border: none;
+            border-radius: 4px;
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(10, 49, 97, 0.3);
+        }
+
+        /* Button Hover Effect: Mexico Colors */
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(90deg, var(--mx-green) 0%, var(--mx-red) 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover::before { opacity: 1; }
+        .btn-primary:hover { 
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(206, 17, 38, 0.4);
+            color: var(--pure-white);
+        }
+
+        /* Navbar & Top Border */
+        .top-flag-border {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--mx-green) 0%, var(--mx-green) 33.3%, var(--pure-white) 33.3%, var(--pure-white) 66.6%, var(--mx-red) 66.6%, var(--mx-red) 100%);
+            z-index: 1002;
+        }
+
+        /* Inner layer for US border */
+        .top-flag-border::after {
+            content:'';
+            position: absolute;
+            bottom: -4px; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--us-blue) 0%, var(--us-blue) 50%, var(--us-red) 50%, var(--us-red) 100%);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 10px; left: 0; right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--us-blue);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar-brand::before {
+            content: '★';
+            color: var(--mx-red);
+            font-size: 1.2rem;
+            margin-top: -2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            letter-spacing: 1px;
+            position: relative;
+            padding: 5px 0;
+            transition: var(--transition);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 50%;
+            width: 0; height: 3px;
+            background: var(--mx-green);
+            transform: translateX(-50%);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .nav-link:hover, .nav-link.active { color: var(--us-blue); }
+        .nav-link.active::after { background: var(--us-red); }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-left: 2px solid #e0e0e0;
+            padding-left: 20px;
+            font-weight: 800;
+        }
+
+        .lang-btn {
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .lang-btn.active { color: var(--us-blue); }
+        .lang-btn:not(.active) { color: #A0A5AA; font-weight: 600; }
+
+        .navbar-toggler {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .toggler-icon {
+            width: 30px; height: 3px;
+            background-color: var(--us-blue);
+            transition: var(--transition);
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--dark-bg);
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1920/v1793830630/669084440_122125658673195824_394418005568480858_n_sz17jm.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            /* Tri-color overlay */
+            background: linear-gradient(135deg, rgba(10, 49, 97, 0.8) 0%, rgba(21, 25, 28, 0.7) 50%, rgba(0, 104, 71, 0.8) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: var(--pure-white);
+            max-width: 900px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-logo {
+            /* Fix deformation: enforce max dimensions and contain */
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: contain;
+            margin: 0 auto 30px auto;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.6));
+            display: block;
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 7vw, 6rem);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 0px rgba(0,0,0,0.8), -2px -2px 0px var(--mx-red);
+            letter-spacing: 2px;
+            width: 100%;
+        }
+
+        .hero-address {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+            color: #E8ECEF;
+            text-transform: uppercase;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text {
+            text-align: left;
+        }
+        
+        /* Ensure headers inside left-aligned grids align left */
+        .about-text .section-header {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .about-images {
+            position: relative;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image {
+            position: absolute;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        /* Americana/Mexican Photo Frame Styling */
+        .about-img-1 { 
+            width: 75%; height: 450px; 
+            top: 20px; left: 0; z-index: 2; 
+            border: 8px solid var(--pure-white);
+            box-shadow: -15px 15px 0px var(--us-blue), 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .about-img-2 { 
+            width: 65%; height: 380px; 
+            bottom: 20px; right: 0; z-index: 1; 
+            border: 8px solid var(--pure-white);
+            box-shadow: 15px -15px 0px var(--mx-green), 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .about-image:hover { transform: scale(1.05); z-index: 5; }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 100px 0;
+            background: var(--pure-white);
+            position: relative;
+        }
+        
+        /* Thematic Top Border for Gallery */
+        .gallery-section::before {
+            content:'';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: repeating-linear-gradient(90deg, var(--us-red) 0px, var(--us-red) 20px, var(--pure-white) 20px, var(--pure-white) 40px, var(--us-blue) 40px, var(--us-blue) 60px);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1;
+            border-radius: 4px;
+            background: var(--off-white);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover img { transform: scale(1.12); }
+        
+        /* Dual color frame overlay */
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 6px solid transparent;
+            border-radius: 4px;
+            transition: var(--transition);
+            pointer-events: none;
+        }
+        .gallery-item:hover::after { 
+            border-color: var(--mx-green); 
+            border-bottom-color: var(--us-red); 
+            border-right-color: var(--us-red);
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 120px 0;
+            background-color: var(--dark-bg);
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1920/v1777151404/yiebnrm6l10wizbcdbp2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            color: var(--pure-white);
+        }
+
+        .info-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(21, 25, 28, 0.92); /* Dark charcoal overlay */
+        }
+        
+        .info-grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 50px 30px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 4px;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Top and Bottom Accent Lines */
+        .info-card::before {
+            content:''; position: absolute; top:0; left:0; width:100%; height:4px;
+            background: var(--us-blue); transform: scaleX(0); transition: var(--transition);
+        }
+        .info-card::after {
+            content:''; position: absolute; bottom:0; left:0; width:100%; height:4px;
+            background: var(--mx-red); transform: scaleX(0); transition: var(--transition);
+        }
+
+        .info-card:hover { transform: translateY(-8px); background: rgba(255, 255, 255, 0.08); }
+        .info-card:hover::before, .info-card:hover::after { transform: scaleX(1); }
+        
+        .info-icon {
+            width: 50px; height: 50px;
+            fill: var(--pure-white);
+            margin-bottom: 25px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+        }
+        
+        /* Thematic coloring on icon hover */
+        .info-card:nth-child(1):hover .info-icon { fill: var(--mx-green); }
+        .info-card:nth-child(2):hover .info-icon { fill: var(--us-red); }
+        .info-card:nth-child(3):hover .info-icon { fill: var(--us-blue); }
+
+        .info-card h4 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--pure-white);
+            letter-spacing: 1.5px;
+            width: 100%;
+        }
+
+        .info-card p {
+            color: #A0A5AA;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #0D1114;
+            color: #88929A;
+            padding: 80px 0 0px;
+            position: relative;
+            border-top: 6px solid var(--mx-green);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            color: var(--pure-white);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px var(--us-red);
+        }
+
+        .footer-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--pure-white);
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px; height: 45px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+            color: var(--pure-white);
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: var(--us-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(10, 49, 97, 0.5);
+        }
+        
+        .social-icons a:nth-child(2):hover { background: var(--mx-green); box-shadow: 0 5px 15px rgba(0, 104, 71, 0.5);}
+        .social-icons a:nth-child(3):hover { background: var(--mx-red); box-shadow: 0 5px 15px rgba(206, 17, 38, 0.5);}
+
+        .footer-bottom {
+            text-align: center;
+            padding: 30px 0 45px 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom a { color: var(--pure-white); font-weight: 800; transition: color 0.3s; }
+        .footer-bottom a:hover { color: var(--us-red); }
+
+        /* Bottom Thematic Border */
+        .bottom-flag-border {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 15px;
+            background: repeating-linear-gradient(45deg, var(--mx-green) 0, var(--mx-green) 20px, var(--pure-white) 20px, var(--pure-white) 40px, var(--mx-red) 40px, var(--mx-red) 60px, var(--us-blue) 60px, var(--us-blue) 80px, var(--us-red) 80px, var(--us-red) 100px);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about-grid, .footer-grid { grid-template-columns: 1fr; }
+            .about-text { text-align: center; }
+            .about-text .section-header { align-items: center; text-align: center; }
+            .about-images { order: -1; height: 500px; margin-bottom: 40px; }
+            .info-grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 4.5rem; }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler { display: flex; }
+            .nav-menu {
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                flex-direction: column;
+                background: var(--pure-white);
+                padding: 30px 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+                transform: translateY(-150%);
+                opacity: 0;
+                transition: var(--transition);
+                border-bottom: 5px solid var(--us-blue);
+            }
+            .nav-menu.active { transform: translateY(0); opacity: 1; }
+            .lang-switch { border-left: none; padding-left: 0; margin-top: 10px; justify-content: center;}
+            .hero-title { font-size: 3.5rem; }
+            .hero-logo { max-height: 200px; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .about-images { height: 400px; }
+            .section-title { font-size: 2.2rem; }
+            .btn-primary { width: 100%; max-width: 350px;}
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+            .about-images { height: 350px; }
+            .about-img-1 { width: 85%; height: 300px; }
+            .about-img-2 { width: 75%; height: 250px; }
+            .hero-title { font-size: 2.8rem; }
+        }
+    </style>
+    
+    <script>
+        window.MENU_TECH_STATE = {
+            "lang":"es",
+            "showReservations":false,
+            "showAbout":true,
+            "showPromo":false,
+            "showGallery":true,
+            "showCatering":false,
+            "showInfo":true,
+            "showDelivery":false,
+            "cuid":"#",
+            "ruid":"#",
+            "title":"Mexican Rock Restaurant",
+            "logoImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830254/MexicanRockRestLOGO_gp48ku.png",
+            "heroAddress":"585 E King St Ext B, Boone, NC 28607",
+            "heroImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830630/669084440_122125658673195824_394418005568480858_n_sz17jm.jpg",
+            "aboutImg1":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830673/668978384_122125658619195824_1775038377008163398_n_x3rpo7.jpg",
+            "aboutImg2":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830677/700325351_122131523715195824_818524186388871690_n_s96nc5.jpg",
+            "gallery":["https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830767/673866822_122126804823195824_5474675899431892531_n_woslvz.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830767/672951781_122126806215195824_3104907764474159883_n_icvrw0.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830768/672068588_122126804343195824_1505244431580372448_n_1_jttcjk.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830768/672455562_122126804757195824_3527487055840826973_n_tppx95.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830769/671208514_122126804643195824_4713548388782051859_n_fuc5ex.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830769/670989197_122126804877195824_8175730241970423199_n_yjfnbo.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830770/669310811_122125658631195824_8155115512301378371_n_jkpmc9.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1793830771/668590372_122125657737195824_83289585847777844_n_qboeer.jpg"],
+            "contact":{"phone":"828-616-0673","address":"585 E King St Ext B, Boone, NC 28607","hours":"Monday – Tuesday: 11AM – 9:30 PM Wednesday: Closed Thursday – Saturday: 11AM – 9:30 PM Sunday: 11AM – 9PM"},
+            "socials":[
+                {"platform":"instagram","url":"https://www.instagram.com/mexicanrockfoodtruck"},
+                {"platform":"facebook","url":"https://www.facebook.com/p/Mexican-rock-food-Truck-61585874742683/"},
+                {"platform":"tiktok","url":"https://www.tiktok.com/@mexican.rock.rest"}
+            ],
+            "paragraphs": {
+                "about": "En junio de 2023 nació un sueño con un propósito especial: compartir el auténtico sabor de nuestra cocina, crear momentos inolvidables y ofrecer a cada cliente una experiencia llena de tradición, calidad y cariño.\n\nDesde el primer día, cada platillo ha sido preparado con pasión, dedicación y ese sazón que nos hace únicos. Poco a poco, hemos convertido cada visita en una oportunidad para compartir buenos momentos, reunir familias y conquistar corazones a través del sabor.\n\nHoy seguimos creciendo gracias a la confianza y preferencia de nuestros clientes, quienes forman parte esencial de nuestra historia.\n¡Gracias por acompañarnos desde el comienzo!\nDesde junio de 2023, cocinando con amor y sirviendo felicidad en cada platillo."
+            },
+            "titles":{
+                "about-title":"Mexican Rock",
+                "about-subtitle":"Our Story",
+                "gallery-title":"Authentic Food",
+                "gallery-subtitle":"Flavors of home",
+                "info-title":"Information",
+                "info-subtitle":"Visit Us"
+            },
+            "info":{
+                "hours":"Monday – Tuesday: 11AM – 9:30 PM\nWednesday: Closed\nThursday – Saturday: 11AM – 9:30 PM\nSunday: 11AM – 9PM",
+                "phone":"828-616-0673",
+                "address":"585 E King St Ext B, Boone, NC 28607"
+            }
+        };
+    </script>
+</head>
+<body>
+    
+    <!-- Top Decorative Flags Border -->
+    <div class="top-flag-border"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="navbar-brand" id="nav-brand">Mexican Rock Restaurant</a>
+            
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Menu">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link active" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+                <li class="nav-item"><a href="#gallery-section" class="nav-link" data-es="Galería" data-en="Gallery">Galería</a></li>
+                <li class="nav-item"><a href="#info-section" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                <li class="nav-item lang-switch">
+                    <span id="lang-es" class="lang-btn active">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'%3E%3Cpath fill='%23006847' d='M0 0h21.3v48H0z'/%3E%3Cpath fill='%23fff' d='M21.3 0h21.3v48H21.3z'/%3E%3Cpath fill='%23ce1126' d='M42.7 0H64v48H42.7z'/%3E%3Ccircle cx='32' cy='24' r='6' fill='%238b4513'/%3E%3C/svg%3E" width="20" height="15" alt="MX"> ES
+                    </span>
+                    <span style="color: #ccc; margin:0 5px;">|</span>
+                    <span id="lang-en" class="lang-btn">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'%3E%3Cpath fill='%23bd3d44' d='M0 0h64v48H0z'/%3E%3Cpath fill='%23fff' d='M0 6.8h64v6.9H0zm0 13.7h64v6.9H0zm0 13.7h64v6.9H0z'/%3E%3Cpath fill='%23192f5d' d='M0 0h32v27.4H0z'/%3E%3Cpath fill='%23fff' d='M5.3 4l1.5 4.6H12l-4.1 3 1.5 4.6-4.1-3-4.1 3 1.5-4.6-4.1-3h5.2zm10.7 0l1.5 4.6h5.2l-4.1 3 1.5 4.6-4.1-3-4.1 3 1.5-4.6-4.1-3h5.2zm10.7 0l1.5 4.6h5.2l-4.1 3 1.5 4.6-4.1-3-4.1 3 1.5-4.6-4.1-3h5.2zm-16 9.1l1.5 4.6H17l-4.1 3 1.5 4.6-4.1-3-4.1 3 1.5-4.6-4.1-3h5.2zm10.7 0l1.5 4.6h5.2l-4.1 3 1.5 4.6-4.1-3-4.1 3 1.5-4.6-4.1-3h5.2z'/%3E%3C/svg%3E" width="20" height="15" alt="US"> EN
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero-section">
+        <div class="hero-content">
+            <!-- Ensure logo attributes don't distort via CSS object-fit -->
+            <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_350/v1793830254/MexicanRockRestLOGO_gp48ku.png" id="hero-logo" alt="Mexican Rock Restaurant Logo" class="hero-logo">
+            
+            <div class="section-header centered" style="margin-bottom: 2rem;">
+                <h1 class="hero-title" data-es="SABORES AUTÉNTICOS" data-en="AUTHENTIC FLAVORS">SABORES AUTÉNTICOS</h1>
+                <div class="thematic-ornament"></div>
+            </div>
+            
+            <p class="hero-address" id="hero-address">585 E King St Ext B, Boone, NC 28607</p>
+            
+            <!-- Custom Action Button -->
+            <a href="https://mexicanrockrestaurant.onlineordering.io/en?locationId=1615912&orderMode=in_store_pickup" target="_blank" class="btn btn-primary" data-es="ORDENAR EN LÍNEA" data-en="ORDER ONLINE">ORDENAR EN LÍNEA</a>
+            
+            <!-- Menutech Background Elements -->
+            <div style="display:none;">
+                <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+                <script src="https://menutech.xyz/menutechUI.min.js"></script>
+                <menutech-orders id="hero-orders" cuid="#" ruid="#" data-glf-cuid="#" data-glf-ruid="#"></menutech-orders>
+                <menutech-reservations id="hero-reservations" cuid="#" ruid="#" data-glf-cuid="#" data-glf-ruid="#" data-glf-reservation="true"></menutech-reservations>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section" id="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <!-- Title properly structured for perfect alignment -->
+                    <div class="section-header">
+                        <span class="section-subtitle" id="about-subtitle" data-es="NUESTRA HISTORIA" data-en="OUR STORY">NUESTRA HISTORIA</span>
+                        <h2 class="section-title" id="about-title">Mexican Rock</h2>
+                        <div class="thematic-ornament"></div>
+                    </div>
+                    
+                    <p id="about-p1" 
+                       data-es="En junio de 2023 nació un sueño con un propósito especial: compartir el auténtico sabor de nuestra cocina, crear momentos inolvidables y ofrecer a cada cliente una experiencia llena de tradición, calidad y cariño." 
+                       data-en="In June 2023, a dream with a special purpose was born: to share the authentic taste of our cuisine, create unforgettable moments, and offer every customer an experience full of tradition, quality, and affection.">
+                        En junio de 2023 nació un sueño con un propósito especial: compartir el auténtico sabor de nuestra cocina, crear momentos inolvidables y ofrecer a cada cliente una experiencia llena de tradición, calidad y cariño.
+                    </p>
+                    
+                    <p id="about-p2" 
+                       data-es="Desde el primer día, cada platillo ha sido preparado con pasión, dedicación y ese sazón que nos hace únicos. Poco a poco, hemos convertido cada visita en una oportunidad para compartir buenos momentos, reunir familias y conquistar corazones a través del sabor." 
+                       data-en="Since day one, every dish has been prepared with passion, dedication, and that seasoning that makes us unique. Little by little, we have turned every visit into an opportunity to share good times, reunite families, and conquer hearts through flavor.">
+                        Desde el primer día, cada platillo ha sido preparado con pasión, dedicación y ese sazón que nos hace únicos. Poco a poco, hemos convertido cada visita en una oportunidad para compartir buenos momentos, reunir familias y conquistar corazones a través del sabor.
+                    </p>
+                    
+                    <p id="about-p3" 
+                       data-es="Hoy seguimos creciendo gracias a la confianza y preferencia de nuestros clientes, quienes forman parte esencial de nuestra historia. ¡Gracias por acompañarnos desde el comienzo! Desde junio de 2023, cocinando con amor y sirviendo felicidad en cada platillo." 
+                       data-en="Today we continue to grow thanks to the trust and preference of our customers, who are an essential part of our history. Thank you for joining us from the beginning! Since June 2023, cooking with love and serving happiness in every dish.">
+                        Hoy seguimos creciendo gracias a la confianza y preferencia de nuestros clientes, quienes forman parte esencial de nuestra historia. ¡Gracias por acompañarnos desde el comienzo! Desde junio de 2023, cocinando con amor y sirviendo felicidad en cada platillo.
+                    </p>
+                </div>
+                
+                <div class="about-images">
+                    <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1793830673/668978384_122125658619195824_1775038377008163398_n_x3rpo7.jpg" alt="Mexican Food Dish" class="about-image about-img-1" loading="lazy">
+                    <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1793830677/700325351_122131523715195824_818524186388871690_n_s96nc5.jpg" alt="Authentic Mexican Tacos" class="about-image about-img-2" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle" id="gallery-subtitle" data-es="SABORES DE CASA" data-en="FLAVORS OF HOME">SABORES DE CASA</span>
+                <h2 class="section-title" id="gallery-title" data-es="Comida Auténtica" data-en="Authentic Food">Comida Auténtica</h2>
+                <div class="thematic-ornament"></div>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Dynamically injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="info-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle" id="info-subtitle" data-es="VISÍTANOS" data-en="VISIT US" style="color: #FFD700;">VISÍTANOS</span>
+                <h2 class="section-title light" id="info-title" data-es="Información" data-en="Information">Información</h2>
+                <div class="thematic-ornament"></div>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    <h4 data-es="Horarios" data-en="Opening Hours">Horarios</h4>
+                    <p id="info-hours">Monday – Tuesday: 11AM – 9:30 PM<br>Wednesday: Closed<br>Thursday – Saturday: 11AM – 9:30 PM<br>Sunday: 11AM – 9PM</p>
+                </div>
+                
+                <div class="info-card">
+                    <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <h4 data-es="Teléfono" data-en="Phone">Teléfono</h4>
+                    <p id="info-phone">828-616-0673</p>
+                </div>
+                
+                <div class="info-card">
+                    <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <h4 data-es="Ubicación" data-en="Location">Ubicación</h4>
+                    <p id="info-address">585 E King St Ext B, Boone, NC 28607</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-brand" id="footer-title-brand">Mexican Rock Restaurant</h3>
+                    <p id="footer-address">585 E King St Ext B, Boone, NC 28607</p>
+                    <p id="footer-phone" style="margin-top:10px; font-weight: 700;">828-616-0673</p>
+                    <div id="social-icons" class="social-icons">
+                        <!-- JS injected -->
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title" data-es="Horarios de Atención" data-en="Opening Hours">Horarios de Atención</h4>
+                    <p id="footer-hours">Monday – Tuesday: 11AM – 9:30 PM<br>Wednesday: Closed<br>Thursday – Saturday: 11AM – 9:30 PM<br>Sunday: 11AM – 9PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                © 2015-<span id="dynamic-year"></span> Powered by <a href="https://menutech.xyz" target="_blank" rel="noopener">Menutech</a>. All Rights Reserved.
+            </div>
+        </div>
+        
+        <!-- Bottom Thematic Border -->
+        <div class="bottom-flag-border"></div>
+    </footer>
+
+    <script>
+        // Automatic Copyright Year Update
+        document.getElementById('dynamic-year').textContent = new Date().getFullYear();
+
+        // Image optimization logic for Menutech Cloudinary Images
+        const optimizeCloudinaryUrl = (url, options = {}) => {
+            if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
+            const [baseUrl, hash] = url.split('#');
+            if (!baseUrl.includes('/upload/')) return url;
+            const parts = baseUrl.split('/upload/');
+
+            let pathSegments = parts[1].split('/');
+            if (pathSegments.length > 1) {
+                const firstSegment = pathSegments[0];
+                const isVersion = /^v\d+$/.test(firstSegment);
+                const isTransformation = !isVersion && (firstSegment.includes('_') || firstSegment.includes(','));
+                if (isTransformation) pathSegments.shift();
+            }
+            const cleanPath = pathSegments.join('/');
+
+            let transformations = ['f_auto', 'q_auto:eco', 'dpr_auto'];
+            if (options.width) transformations.push(`w_${options.width}`);
+            if (options.height) transformations.push(`h_${options.height}`);
+            if (options.crop) transformations.push(`c_${options.crop}`);
+            
+            return hash 
+                ? `${parts[0]}/upload/${transformations.join(',')}/${cleanPath}#${hash}`
+                : `${parts[0]}/upload/${transformations.join(',')}/${cleanPath}`;
+        };
+
+        const SOCIAL_ICONS = {
+            instagram: `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            facebook: `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            tiktok: `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-.9 4.4-2.42 5.95-1.57 1.59-3.79 2.5-6.02 2.57-2.31.06-4.66-.5-6.39-2.02-1.78-1.55-2.8-3.9-2.73-6.25.07-2.42 1.25-4.7 3.12-6.14 1.75-1.34 4.09-1.84 6.22-1.48v4.06c-1.18-.32-2.45-.19-3.53.4-1.07.57-1.85 1.58-2.12 2.77-.28 1.17.06 2.45.85 3.39.79.94 2.11 1.41 3.32 1.25 1.34-.17 2.54-1 3.09-2.22.4-.87.54-1.85.53-2.82V.02h2.29z"/></svg>`
+        };
+
+        let currentLang = 'es';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            
+            document.querySelectorAll('[data-es]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.textContent = text;
+            });
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            
+            if (lang === 'es') {
+                esBtn.classList.add('active'); enBtn.classList.remove('active');
+            } else {
+                enBtn.classList.add('active'); esBtn.classList.remove('active');
+            }
+        }
+
+        function updateUI(data) {
+            if (!data) return;
+
+            if (data.lang) applyLanguage(data.lang);
+
+            if (data.title) {
+                const navBrand = document.getElementById('nav-brand');
+                const footerBrand = document.getElementById('footer-title-brand');
+                if (navBrand) navBrand.textContent = data.title;
+                if (footerBrand) footerBrand.textContent = data.title;
+            }
+
+            if (data.logoImg) {
+                const logo = document.getElementById('hero-logo');
+                const favicon = document.getElementById('favicon');
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 350 });
+                if (logo) logo.src = optimizedLogo;
+                if (favicon) favicon.href = optimizedLogo;
+            }
+
+            if (data.heroAddress !== undefined) {
+                const addr = document.getElementById('hero-address');
+                if (addr) addr.textContent = data.heroAddress;
+            }
+
+            if (data.heroImg) {
+                const heroSection = document.getElementById('hero-section');
+                if (heroSection) heroSection.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1920 })}')`;
+            }
+
+            if (data.aboutImg1) {
+                const img = document.getElementById('about-img-1');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 800 });
+            }
+            if (data.aboutImg2) {
+                const img = document.getElementById('about-img-2');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 800 });
+            }
+
+            if (data.info) {
+                const hoursEl = document.getElementById('info-hours');
+                const phoneEl = document.getElementById('info-phone');
+                const addressEl = document.getElementById('info-address');
+                const fHours = document.getElementById('footer-hours');
+                const fPhone = document.getElementById('footer-phone');
+                const fAddress = document.getElementById('footer-address');
+
+                if (hoursEl) hoursEl.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (phoneEl) phoneEl.textContent = data.info.phone || '';
+                if (addressEl) addressEl.textContent = data.info.address || '';
+                
+                if (fHours) fHours.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (fPhone) fPhone.textContent = data.info.phone || '';
+                if (fAddress) fAddress.textContent = data.info.address || '';
+            }
+
+            if (data.socials) {
+                const container = document.getElementById('social-icons');
+                if (container) {
+                    container.innerHTML = data.socials.map(s => {
+                        let platform = s.platform.toLowerCase();
+                        if (platform === 'twitter' || s.url.includes('tiktok.com')) {
+                            platform = 'tiktok';
+                        }
+                        return `
+                        <a href="${s.url}" target="_blank" aria-label="${platform}">
+                            ${SOCIAL_ICONS[platform] || SOCIAL_ICONS.facebook}
+                        </a>`;
+                    }).join('');
+                }
+            }
+
+            if (data.gallery) {
+                const container = document.getElementById('gallery-container');
+                if (container) {
+                    container.innerHTML = data.gallery.map(img => `
+                        <div class="gallery-item">
+                            <img src="${optimizeCloudinaryUrl(img, { width: 500, height: 500, crop: 'fill' })}" loading="lazy" alt="Mexican Food">
+                        </div>
+                    `).join('');
+                }
+            }
+            
+            // Respect HTML translations unless new data explicitly overrides via Menutech Engine
+            if (data.paragraphs && data.paragraphs.about && data.paragraphs.about !== window.MENU_TECH_STATE.paragraphs.about) {
+                const segments = data.paragraphs.about.split('\n\n');
+                ['about-p1', 'about-p2', 'about-p3'].forEach((id, i) => {
+                    const el = document.getElementById(id);
+                    if (el && segments[i]) {
+                        el.textContent = segments[i];
+                        el.removeAttribute('data-es');
+                        el.removeAttribute('data-en');
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'UPDATE_CONTENT') {
+                updateUI(event.data.data);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.MENU_TECH_STATE) {
+                updateUI(window.MENU_TECH_STATE);
+                applyLanguage(window.MENU_TECH_STATE.lang || 'es');
+            }
+
+            document.getElementById('lang-es').addEventListener('click', () => applyLanguage('es'));
+            document.getElementById('lang-en').addEventListener('click', () => applyLanguage('en'));
+
+            // Navbar toggle logic
+            const toggler = document.getElementById('navbar-toggler');
+            const menu = document.getElementById('nav-menu');
+            
+            toggler.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+
+            // Active Nav Links & Scroll styling
+            const navbar = document.querySelector('.navbar');
+            const sections = document.querySelectorAll('section, header');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.padding = '10px 0';
+                } else {
+                    navbar.style.padding = '15px 0';
+                }
+
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (scrollY >= sectionTop - 150) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
